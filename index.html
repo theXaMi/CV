@@ -1,0 +1,521 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<!-- Primary Meta Tags -->
+<title>XaMi's CV</title>
+<meta name="title" content="XaMi's CV">
+<meta name="description" content="This site contains my CV.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://xami.me/cv">
+<meta property="og:title" content="XaMi's CV">
+<meta property="og:description" content="This site contains my CV.">
+<meta property="og:image" content="http://www.xami.me/cv/thumbnail.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://xami.me/cv">
+<meta property="twitter:title" content="XaMi's CV">
+<meta property="twitter:description" content="This site contains my CV.">
+<meta property="twitter:image" content="http://www.xami.me/cv/thumbnail.png">
+
+</head>
+
+<header id="head">
+    <div id="cvtext">
+        <b>CV</b>
+    </div>
+    <div id="namebox">
+        <div id="name">
+            <b>Michał Modzelewski</b>
+            <div class="langselector" style="height:0;">
+                <img id="langicon" onclick="changelang(this)" alt="POL" style="width:10vw; position:absolute; top:2vmin; left:75vw;"
+                    src="https://raw.githubusercontent.com/lipis/flag-icon-css/master/flags/4x3/pl.svg" />
+            </div>
+        </div>
+    </div>
+</header>
+
+<body onload="init();">
+    <div class="category" onclick="expandcat(this)">
+        <div class="categorytextcontainer">
+            <h1 class="lang-en">Skills <br /></h1>
+            <h1 class="lang-pl">Umiejętności <br /></h1>
+        </div>
+        <div class="card">
+            <div class="progressbars">
+                <label class="lang-en">* Programming
+                    <progress value=100 max=100>100</progress></label>
+                <label class="lang-pl">* Programowanie
+                    <progress value=100 max=100>100</progress></label>
+                <br />
+                <label class="lang-en">* 3D-Modelling
+                    <progress value=60 max=100>60</progress></label>
+                <label class="lang-pl">* Modelowanie 3D
+                    <progress value=60 max=100>60</progress></label>
+                <br />
+                <label class="lang-en">* Making music
+                    <progress value=40 max=100>40</progress></label>
+                <label class="lang-pl">* Tworzenie muzyki
+                    <progress value=40 max=100>40</progress></label>
+                <br />
+                <label class="lang-en">* Mechanics
+                    <progress value=50 max=100>50</progress></label>
+                <label class="lang-pl">* Mechanika
+                    <progress value=50 max=100>50</progress></label>
+                <br />
+                <label class="lang-en">* Social skills
+                    <progress value=15 max=100>15</progress></label>
+                <label class="lang-pl">* Umiejętności społeczne
+                    <progress value=15 max=100>15</progress></label>
+            </div>
+            <br />
+            <div class="lang-en">
+                I'm trying to be a renaissance man of the modern world. I want to know stuff, and know how to do stuff,
+                but
+                I'm only interested in electronical and logical side of the world. Items on this list are very similar
+                to
+                items
+                on "Hobbies" list because I love doing all of these things, when I'm doing any of these - that's when I
+                really feel alive. These are very broad terms, that's not a mistake, I enjoy every little bit of each of
+                these broadly put skills.
+            </div>
+            <div class="lang-pl">
+                Próbuję być człowiekiem renesansu dzisiejszego świata. Chcę wiedzieć różne rzeczy i wiedzieć jak robić
+                różne rzeczy, ale jestem tylko zainteresowany elektroniczną
+                i logiczną częścią świata. Elementy powyższej listy są bardzo podobne do elementów w liście "Hobby",
+                ponieważ uwielbiam robić wszystkie te rzeczy,
+                gdy je robię - wtedy czuję, że naprawdę żyję. To są bardzo ogólne stwierdzenia, to nie jest błąd,
+                uwielbiam każdy mały fragment każdej z tych
+                ogólnie ujętych umiejętności.
+            </div>
+        </div>
+    </div>
+    <div class="category" onclick="expandcat(this)">
+        <div class="categorytextcontainer">
+            <h1 class="lang-en">Hobbies</h1>
+            <h1 class="lang-pl">Hobby</h1>
+        </div>
+        <div class="card">
+            <div class="progressbars">
+                <label class="lang-en">* Making games
+                    <progress value=70 max=100>70</progress></label>
+                <label class="lang-pl">* Tworzenie gier
+                    <progress value=70 max=100>70</progress></label>
+                <br />
+                <label class="lang-en">* Playing games
+                    <progress value=90 max=100>90</progress></label>
+                <label class="lang-pl">* Granie w gry
+                    <progress value=90 max=100>90</progress></label>
+                <br />
+                <label class="lang-en">* Fooling around with arduino
+                    <progress value=50 max=100>50</progress></label>
+                <label class="lang-pl">* Zabawa arduino
+                    <progress value=50 max=100>50</progress></label>
+                <br />
+                <label class="lang-en">* Sleeping
+                    <progress value=80 max=100>80</progress></label>
+                <label class="lang-pl">* Spanie
+                    <progress value=80 max=100>80</progress></label>
+                <br />
+                <label class="lang-en">* Staying up all night
+                    <progress value=80 max=100>80</progress></label>
+                <label class="lang-pl">* Niespanie
+                    <progress value=80 max=100>80</progress></label>
+                <br />
+                <label class="lang-en">* Learning in general
+                    <progress value=90 max=100>90</progress></label>
+                <label class="lang-pl">* Ogółem uczenie się
+                    <progress value=90 max=100>90</progress></label>
+            </div>
+            <br />
+            <div class="lang-en">
+                I like doing anything that's somewhat associated with electronics or mechanics, but most of all I love
+                making art, be it programming or mechanics, it's all art to me. I like to sleep, just like everyone,
+                except
+                a little bit more, and I like staying up all night, I like both of these worlds. I love learning new
+                stuff.
+                I even love learning stuff I already know.
+            </div>
+            <div class="lang-pl">
+                Lubię robić wszystko co jest jakkolwiek związane z elektroniką, bądź mechaniką, ale przede wszystkim
+                uwielbiam
+                robić sztukę, czy to programowanie czy mechanika, wszystko to dla mnie jest sztuką. Lubię spać, jak
+                każdy,
+                ale też trochę bardziej, niż każdy, lubię też nie spać w nocy, lubię obydwa te światy. Uwielbiam uczyć
+                się nowych rzeczy,
+                nawet tych które już umiem.
+            </div>
+        </div>
+    </div>
+    <div class="category" onclick="expandcat(this)">
+        <div class="categorytextcontainer">
+            <h1 class="lang-en">Experience</h1>
+            <h1 class="lang-pl">Doświadczenie</h1>
+        </div>
+        <div class="card">
+            <h2 class="lang-en">Education</h2>
+            <h2 class="lang-pl">Wykształcenie</h2>
+            <div class="cardinsidecontainer">
+                <h2 class="lang-en">School</h2>
+                <h2 class="lang-pl">Szkoła</h2>
+                <div class="pseudohr"></div>
+                2014-2018 <br /><i><small class="lang-en">(4 years)</small><small class="lang-pl">(4 lata)</small></i>
+                <div class="pseudohr"></div>
+                <span class="lang-en">
+                    I graduated IT major in Technical High school in Łapy
+                </span>
+                <span class="lang-pl">
+                    Ukończyłem Technikum w Łapach na kierunku informatyki.
+                </span>
+            </div>
+            <div class="cardinsidecontainer">
+                <h2 class="lang-en">University</h2>
+                <h2 class="lang-pl">Studia</h2>
+                <div class="pseudohr"></div>
+                <span class="lang-en">2018-now</span>
+                <span class="lang-pl">2018-teraz</span>
+                <div class="pseudohr"></div>
+                <span class="lang-en">
+                    I am studying IT major at Politechnika Białostocka.
+                </span>
+                <span class="lang-pl">
+                    Studiuję informatykę na Politechnice Białostockiej.
+                </span>
+            </div>
+            <h2 class="lang-en">Work</h2>
+            <h2 class="lang-pl">Work</h2>
+            <div class="cardinsidecontainer">
+                <h2>Aexol sp.z.o.o</h2>
+                <div class="pseudohr"></div>
+                02.2021 - 08.2021 <br /><i><small class="lang-en">(6 months)</small><small class="lang-pl">(6
+                        miesięcy)</small></i>
+                <div class="pseudohr"></div>
+                <span class="lang-en">
+                    I worked in Unity and React Native in small teams, started from debugging, ended up with a lot of
+                    progress. I quit
+                    because they couldn't pay me enough.
+                </span>
+                <span class="lang-pl">
+                    Pracowałem w Unity i React Native w małych drużynach, zacząłem od debugowania, skończyłem ze
+                    znaczącym progressem.
+                    Skończyłem bo nie dostawałem wystarczającej wypłaty.
+                </span>
+            </div>
+            <div class="cardinsidecontainer">
+                <h2 class="lang-en">2.5D engine <i><small>(my own project)</small></i></h2>
+                <h2 class="lang-pl">silnik 2.5D <i><small>(mój własny projekt)</small></i></h2>
+                <div class="pseudohr"></div>
+                01.2020 <br /><i><small class="lang-en">(2 days)</small><small class="lang-pl">(2 dni)</small></i>
+                <div class="pseudohr"></div>
+                <span class="lang-en">
+                    I worked on 2.5D engine built from ground up in pure C language. It was based on DOOM (1996 game).
+                    Levels were randomly generated,
+                    player had 360 degrees of rotation freedom, additionaly there is pistol, bullets and enemies.
+                </span>
+                <span class="lang-pl">
+                    Pracowałem nad silnikiem 2.5D zbudowanym od zera w czystym języku C. Był bazowany na DOOM-ie (grze z 
+                    1996 roku). Poziomy były losowo generowane. Gracz miał 360 stopni wolności obrotu, dodatkowo był pistolet 
+                    naboje i przeciwnicy.
+                </span>
+            </div>
+            <div class="cardinsidecontainer">
+                <h2 class="lang-en">Mobile Application <i><small class="lang-en">(my own project)</small></i></h2>
+                <div class="pseudohr"></div>
+                02.2019 - 10.2019 <br /><i><small class="lang-en">(5 months)</small><small class="lang-pl">(5
+                        miesięcy)</small></i>
+                <div class="pseudohr"></div>
+                <span class="lang-en">
+                    Game for Android devices made in Unity in C#. It was made to be simple and intuitive. I made it to
+                    test the paycheck for indie
+                    Android development. Client-server connection based on library written entirely by myself.
+                </span>
+                <span class="lang-pl">
+                    Gra na urządzenia Android zrobiona w Unity w C#. Stworzyłem tak, by była prosta i intuicyjna.
+                    Stworzyłem ją, żeby sprawdzić
+                    wypłatę indie developera gier na Androida. Połączenie klient-serwer było bazowane całkowicie na
+                    mojej własnej bibliotece.
+                </span>
+            </div>
+            <div class="cardinsidecontainer">
+                <h2>TVK Hajnówka S.J.</h2>
+                <div class="pseudohr"></div>
+                02.2017 - 03.2017 <br /><i><small class="lang-en">(1 month)</small><small class="lang-pl">(1
+                        miesiąc)</small></i>
+                <div class="pseudohr"></div>
+                <span class="lang-en">
+                    I worked as an intern in television, internet and cable company. I learnt making RJ-45 and F plugs.
+                    I was managing database servers and
+                    talking with clients
+                </span>
+                <span class="lang-pl">
+                    Pracowałem jako stażysta w firmie z telewizją, internetem i kablówką. Nauczyłem się zarabiać wtyki
+                    RJ-45 i F. Zarządzałem serwerem baz
+                    danych i rozmawiałem z klientami.
+                </span>
+            </div>
+            <div class="cardinsidecontainer">
+                <h2 class="lang-en">Managing video game servers</h2>
+                <h2 class="lang-pl">Zarządzanie serwerami do gier</h2>
+                <div class="pseudohr"></div>
+                01.2014 - 12.2016 <br /><i><small class="lang-en">(almost 3 years)</small><small class="lang-pl">(prawie
+                        3 lata)</small></i>
+                <div class="pseudohr"></div>
+                <span class="lang-en">
+                    I created servers for many different games. I had servers with 250 players playing at the same time.
+                    At its best it had 120 players
+                    every day for a couple of months. I made many plugins and modifications to games in many different
+                    languages, including: Lua, Python,
+                    Java, C++.
+                </span>
+                <span class="lang-pl">
+                    Stworzyłem serwery do wielu różnych gier. Miałem serwery, na których w jednym momencie grało 250
+                    graczy. W najlepszym czasie miałem
+                    120 graczy każdego dnia przez kilka miesięcy. Zrobiłem wiele wtyczek i modyfikacji do gier w wielu
+                    różnych językach, wliczając: Lua,
+                    Python, Java, C++.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="category" onclick="expandcat(this)">
+        <div class="categorytextcontainer">
+            <h1 class="lang-en">Environments</h1>
+            <h1 class="lang-pl">Środowiska</h1>
+        </div>
+        <div class="card">
+            <div class="progressbars">
+                <h2 class="lang-en">Programming</h2>
+                <h2 class="lang-pl">Programowanie</h2>
+                <label>* Unity</label>
+                <progress value=60 max=100>60</progress>
+                <br class="nodel" />
+                <label>* Unreal</label>
+                <progress value=50 max=100>50</progress>
+                <br class="nodel" />
+                <label>* ReactNative</label>
+                <progress value=40 max=100>40</progress>
+                <br class="nodel" />
+                <label>* Office (VBA)</label>
+                <progress value=80 max=100>80</progress>
+                <br class="nodel" />
+                <h2 class="lang-en">Other</h2>
+                <h2 class="lang-pl">Inne</h2>
+                <label class="lang-en">* Blender (3D Modelling)
+                    <progress value=60 max=100>60</progress></label>
+                <label class="lang-pl">* Blender (Modelowanie 3D)
+                    <progress value=60 max=100>60</progress></label>
+                <br />
+                <label>* Linux</label>
+                <progress value=50 max=100>50</progress>
+                <br class="nodel" />
+                <label>* Windows</label>
+                <progress value=90 max=100>90</progress>
+            </div>
+            <br />
+            <div class="lang-en">
+                I am eager to learn any new environments and work in them. This website was made in 5 hours (+ 3 hours
+                for
+                background effects). This is basically the first website I have ever written all by myself, without
+                templates or external tools. I did several mistakes, but the demo you get here is what's the end result
+                when I DON'T know the environment.
+            </div>
+            <div class="lang-pl">
+                Chętnie nauczę się nowych środowisk i będę w nich pracował. Ta strona została zrobiona w 5 godzina (+ 3
+                godziny
+                zajęło mi zrobienie efektów tła). W zasadzie to jest to pierwsza strona którą napisałem całkowicie sam,
+                bez
+                gotowych wzorów lub narzędzi zewnętrznych. Popełniłęm kilka błędów ale to demo pokazuje jak wygląda
+                rezultat
+                kiedy NIE znam środowiska.
+            </div>
+        </div>
+    </div>
+    <div class="category" onclick="expandcat(this)">
+        <div class="categorytextcontainer">
+            <h1 class="lang-en">Languages</h1>
+            <h1 class="lang-pl">Języki</h1>
+        </div>
+        <div class="card">
+            <div class="progressbars">
+                <h2 class="lang-en">Spoken</h2>
+                <h2 class="lang-pl">Mówione</h2>
+                <label class="lang-en">* Polish
+                    <progress value=100 max=100>100</progress></label>
+                <label class="lang-pl">* Polski
+                    <progress value=100 max=100>100</progress></label>
+                <br />
+                <label class="lang-en">* English
+                    <progress value=99 max=100>99</progress></label>
+                <label class="lang-pl">* Angielski
+                    <progress value=99 max=100>99</progress></label>
+                <br />
+                <h2 class="lang-en">Programming</h2>
+                <h2 class="lang-pl">Programowania</h2>
+                <label>* Python</label>
+                <progress value=90 max=100>90</progress>
+                <br class="nodel" />
+                <label>* C++</label>
+                <progress value=70 max=100>70</progress>
+                <br class="nodel" />
+                <label>* C#</label>
+                <progress value=50 max=100>50</progress>
+                <br class="nodel" />
+                <label class="lang-en">* Assembly
+                    <progress value=25 max=100>25</progress></label>
+                <label class="lang-pl">* Assembler(y)
+                    <progress value=25 max=100>25</progress></label>
+                <br />
+                <label class="lang-en">* Any, given one week
+                    <progress value=15 max=100>15</progress></label>
+                <label class="lang-pl">* Dowolny, po tygodniu
+                    <progress value=15 max=100>15</progress></label>
+            </div>
+            <br />
+            <div class="lang-en">
+                I'm pretty fast learner. I managed multiple times to shock people that worked in certain environments by
+                learning these in 1 week and doing something they have never imagined. I like programming the
+                impossible.
+                If you tell me I won't be able to do something - that's exactly what will make me do it. But don't judge
+                me too much by this website. I hate HTML.
+            </div>
+            <div class="lang-pl">
+                Uczę się dość szybko. Udawało mi się wielokrotnie szokować ludzi, którzy pracowali w pewnych
+                środowiskach
+                poprzez nauczenie się ich w 1 tydzien i zrobienie czegoś czego sobie nigdy nie wyobrażali. Lubię
+                programować
+                niemożliwe. Jeśli mi powiesz, że czegoś się nie da zaprogramować - to dokładnie to sprawi, że to zrobię.
+                Ale
+                nie oceniaj mnie za bardzo po tej stronie. Nienawidzę HTML-a.
+            </div>
+        </div>
+    </div>
+    <div class="category" onclick="expandcat(this)">
+        <div class="categorytextcontainer">
+            <h1 class="lang-en">Personality</h1>
+            <h1 class="lang-pl">Osobowość</h1>
+        </div>
+        <div class="card">
+            <div class="progressbars">
+                <h2 class="lang-en">Virtues</h2>
+                <h2 class="lang-pl">Zalety</h2>
+                <label class="lang-en">* Concentrated
+                    <progress value=80 max=100>80</progress></label>
+                <label class="lang-pl">* Skupiony
+                    <progress value=80 max=100>80</progress></label>
+                <br />
+                <label class="lang-en">* Fast-learner
+                    <progress value=80 max=100>80</progress></label>
+                <label class="lang-pl">* Szybko pojmujący
+                    <progress value=80 max=100>80</progress></label>
+                <br />
+                <label class="lang-en">* Honest
+                    <progress value=100 max=100>100, Brutally</progress></label>
+                <label class="lang-pl">* Szczery
+                    <progress value=100 max=100>100, Brutalnie</progress></label>
+                <h2 class="lang-en">Flaws</h2>
+                <h2 class="lang-pl">Wady</h2>
+                <label class="lang-en">* Honest
+                    <progress value=100 max=100>100, As I said, brutally.</progress></label>
+                <label class="lang-pl">* Szczery
+                    <progress value=100 max=100>100, Jak mówiłem, brutalnie.</progress></label>
+                <br />
+                <label class="lang-en">* Lazy
+                    <progress value=80 max=100>80</progress></label>
+                <label class="lang-pl">* Leniwy
+                    <progress value=80 max=100>80</progress></label>
+                <br />
+                <label class="lang-en">* Irresponsible
+                    <progress value=50 max=100>50</progress></label>
+                <label class="lang-pl">* Nieodpowiedzialny
+                    <progress value=50 max=100>50</progress></label>
+                <br />
+                <label class="lang-en">* Foul mouth (sometimes)
+                    <progress value=60 max=100>60</progress></label>
+                <label class="lang-pl">* Niewyparzony język (czasem)
+                    <progress value=60 max=100>60</progress></label>
+            </div>
+            <br />
+            <div class="lang-en">
+                I'm quite charismatic person and I value honesty the highest. I might be able to tell you to go fuck
+                yourself,
+                but if I did, you would know very well you deserved it. I'm never lying whether it's my work hours or
+                amount
+                of work done or even everyday chit-chat. One side of me wouldn't be possible without the other. I tend
+                to be extravagant and controversial.
+            </div>
+            <div class="lang-pl">
+                Jestem dość charyzmatyczną osobą i najbardziej cenię sobie szczerość. Mógłbym powiedzieć, żebyś
+                spierdalał,
+                ale jeśli bym tak powiedział, wiedziałbyś bardzo dobrze, że na to zasłużyłeś. Nigdy nie kłamię,
+                niezależnie od tego,
+                czy chodzi o ilość przepracowanych godzin, czy wykonanej pracy, czy nawet w codziennej pogawędce. Jedna
+                strona
+                mnie nie byłaby możliwa bez drugiej. Bywam ekstrawagancki i kontrowersyjny.
+            </div>
+        </div>
+    </div>
+    <div class="category" onclick="expandcat(this)">
+        <div class="categorytextcontainer">
+            <h1 class="lang-en">Dream job</h1>
+            <h1 class="lang-pl">Praca marzeń</h1>
+        </div>
+        <div class="card">
+            <br />
+            <div class="lang-en">
+                What I want to do the most is to make video games, preferably PC games. I want to create art to inspire
+                people, but I'm really flexible and I can do whatever you throw at me, but at varying performance rates,
+                depending on how I like coding the part you made me do or fix. The thing I love the most - and here I
+                will repeat myself - is art. And that's a very broad spectrum for programming tasks. Just tell me what
+                you want done and I can tell you how it is creative for me.
+            </div>
+            <div class="lang-pl">
+                To co chciałbym robić najbardziej to gry wideo, preferowalnie komputerowe. Chcę tworzyć sztukę, aby
+                inspirować innych ludzi, ale jestem też bardzo elastyczny i mogę zrobić cokolwiek we mnie rzucisz, ale
+                z różnym tempem pracy, zależnym od tego czy lubię programować to co każesz mi zrobić lub naprawić. To
+                co lubię najbardziej - i tu się powtórzę - to sztuka. A to jest bardzo szerokie spektrum zadań
+                programistycznych.
+                Powiedz mi co chcesz mieć zrobione, a ja ci powiem w jaki sposób dla mnie jest to sztuką.
+            </div>
+        </div>
+    </div>
+    <div class="category" onclick="expandcat(this, true)">
+        <div class="categorytextcontainer">
+            <h1 class="lang-en">Contact</h1>
+            <h1 class="lang-pl">Kontakt</h1>
+        </div>
+        <div class="card">
+            <div class="pseudohr" style="background-color: 445;border-color: 445;"></div>
+            <br />
+            <h2>E-mail:</h2><input type="email" value="xamioriginal@gmail.com" readonly>
+            <br /><br />
+            <div class="pseudohr" style="background-color: 445;border-color: 445;"></div>
+            <br />
+            <h2 class="lang-en">Phone number:</h2>
+            <h2 class="lang-pl">Numer telefonu:</h2>
+            <input type="tel" value="505514755" readonly>
+            <br /><br />
+            <div class="pseudohr" style="background-color: 445;border-color: 445;"></div>
+            <br />
+            <h2 class="lang-en">Direct message:</h2>
+            <h2 class="lang-pl">Bezpośrednia wiadomość:</h2>
+            <form action="senddm.php" name="dmform" id="dmform" method="post">
+            <input type="text" name="author" placeholder="Name">
+            <textarea name="msg" form="dmform" placeholder="Message here..."></textarea>
+            <br />
+            <input type="submit" value="Send" class="submitButton" style="width:20vw; background-color: #445; color: #88a;">
+            </form>
+        </div>
+    </div>
+    <div id="emptycategory" class="category" onclick="expandcat(getCatFromEmpty())"></div>
+    <div id="canvas"><svg id="canvassvg"></svg>
+    </div>
+
+</body>
+
+</html>
+<script src="./script.js"></script> 

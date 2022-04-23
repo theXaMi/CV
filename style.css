@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'YanoneKaffeesatz-Regular';
+    src: url("./YanoneKaffeesatz-Regular.ttf");
+}
+
+* {
+    font-family: 'YanoneKaffeesatz-Regular', 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+html {
+    background-color: #000;
+    overflow: hidden;
+}
+
+header {
+    background-color: #88a;
+    border-bottom-color: #000;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: #668;
+    height: 100%;
+    width: 100%;
+}
+
+#namebox {
+    background-color: #88a;
+    box-shadow: inset 0 0 50px #445;
+    margin-bottom: 0%;
+    flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+    position: relative;
+    justify-content: left;
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 8px;
+    z-index: 10;
+}
+
+#name {
+    text-align: center;
+    font-size: 38px;
+    font-size: 9vmin;
+    align-self: center;
+    margin: 16px;
+}
+
+#cvtext {
+    background-color: #88a;
+    box-shadow: inset 0 0 50px #445;
+    text-align: center;
+    margin-top: 0%;
+    font-size: 48px;
+    font-size: 12vmin;
+    border-style: solid;
+    border-width: 0;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    padding: 12px;
+    align-self: flex-start;
+    align-self: stretch;
+    z-index: 10;
+}
+
+svg {
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
+    stroke: #aaf;
+    stroke-width: 2;
+}
+
+.category {
+    background-color: #88a;
+    margin: 8px;
+    padding: 5px;
+    width: 40vw;
+    height: 8vmin;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1;
+    cursor: default;
+    z-index: 20;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px #445;
+}
+
+.cardinsidecontainer {
+    background-color: #668;
+    margin: 8px;
+    padding: 5px;
+    position: relative;
+    left: 5%;
+    width: 85%;
+    text-align: center;
+    align-items: center;
+    border-style: slid;
+    border-radius: 5px;
+    border-width: 1;
+    cursor: default;
+    box-shadow: inset 0 0 20px #88a;
+}
+
+.pseudohr {
+    background-color: #88a;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 1px #668;
+    height: 3px;
+}
+
+.categorytextcontainer {
+    height: 9vmin;
+    width: 40vw;
+    font-size: 20vw;
+    overflow-x: visible;
+    vertical-align: middle;
+
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+.category h1 {
+    font-size: 8vmin;
+    vertical-align: middle;
+}
+
+.card {
+    overflow-y: scroll;
+    height: 85%;
+    padding-right: 10px;
+    font-size: 4vmin;
+    flex: 1;
+}
+
+input {
+    height:5vh; 
+    width:30vw; 
+    text-align: center; 
+    font-size: 3vh; 
+    background-color: #88a; 
+    color: #000;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+textarea {
+    height:30vh;
+    width:30vw;
+    font-size: 3vh;
+    background-color: #88a;
+    color: #000;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+::placeholder {
+    color: #445;
+}
+
+.progressbars {
+    text-align: right;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #668;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #445;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #445;
+    border-radius: 10px;
+    box-shadow: inset 0 0 4px #000;
+}
+
+progress::-webkit-progress-value {
+    background: #445;
+}
+
+progress::-moz-progress-bar {
+    background: #445;
+}
+
+progress {
+    background-color: #445;
+    color: #445;
+    height: 4vmin;
+    width: 20vw;
+}
+
+h1 {
+    font-size: 7vh;
+    margin: 0;
+    margin-bottom: 5;
+}
+
+h2 {
+    font-size: 4vh;
+    margin: 0;
+    text-align: center;
+}
+
+#emptycategory {
+    background-color: #445;
+    position: absolute;
+    border-style: hidden;
+    z-index: 10;
+    box-shadow: inset 0 0 10px #88a;
+    /*display: none;*/
+}
+
+#canvas {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    top: 0px;
+    left: 0px;
+}
+
+#canvassvg {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    z-index: 5;
+}
+
+.canvasitem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3;
+    height: 3;
+    background-color: #ccf;
+    border-style: solid;
+    border-color: #ccf;
+    border-width: 1;
+    border-radius: 10px;
+    opacity: 1;
+    /* unnecesary points, I didn't like how they look */
+}
+
+.lang-pl {
+    display: none;
+}
